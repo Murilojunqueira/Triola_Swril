@@ -1,0 +1,723 @@
+- Class: meta
+  Course: Triola_Swril
+  Lesson: Primeira Selecao
+  Author: Murilo de Oliveira Junqueira
+  Type: Standard
+  Organization: Universidade Federal do Pará
+  Version: 2.4.4
+
+# Questão 01
+
+- Class: text
+  Output: Aqui iremos fazer uma seleção de exercícios retirados do livro 'Introdução à Estatística', 
+    de Mário Triola (12a. edição). Por favor resposta os exercícios conforme solicitado e depois envie as 
+    lições ao seu instrutor. A última questão dessa lição te mostrará como fazer isso.
+
+# Questão 02
+
+- Class: mult_question
+  Output: 'Questão 01 - Determine se a fonte dada tem o potencial para criar um viés em um estudo estatístico. 
+    No Conjunto de Dados de Medidas Corporais 1 no Apêndice B do livro de Triola, há medidas 
+    corporais, obtidas a partir de balanças e trenas, feitas pelo Centro Nacional de Estatísticas 
+    em Saúde dos Estados Unidos da América.'
+  CorrectAnswer: Baixo potencial para viés de fonte de dados
+  AnswerChoices: Baixo potencial para viés de fonte de dados; Alto potencial para viés de fonte de dados
+  AnswerTests: omnitest(correctVal='Baixo potencial para viés de fonte de dados')
+  Hint: Pense se a organização ela é focada na reputação de seus dados ou se as pesquisas são armas para outros 
+    objetivos, como objetivos comerciais, militares ou geopolíticos.
+
+# Questão 03
+
+- Class: mult_question
+  Output: 'Questão 02 - Determine se a fonte dada tem o potencial para criar um viés em um estudo estatístico: um
+    artigo no Journal of Nutrition (Vol. 130, No. 8) observou que o chocolate é rico em flavonóides. 
+    O artigo observa que “o consumo regular de alimentos ricos em flavonóides pode reduzir o risco de 
+    doença coronariana”. O estudo recebeu financiamento da Mars Inc., empresa de doces, e da Associação Americana de 
+    Fabricantes de Chocolate.'
+  CorrectAnswer: Alto potencial para viés de fonte de dados
+  AnswerChoices: Baixo potencial para viés de fonte de dados; Alto potencial para viés de fonte de dados
+  AnswerTests: omnitest(correctVal='Alto potencial para viés de fonte de dados')
+  Hint: Pense se a organização ela é focada na reputação de seus dados ou se as pesquisas são armas para outros 
+    objetivos, como objetivos comerciais, militares ou geopolíticos.
+
+# Questão 04
+
+- Class: mult_question
+  Output: 'Questão 03 - Em um anúncio para uma revista, um dispositivo usado para desencorajar roubos de carros,
+    foi declarado que "O Clube reduz suas chances de roubo de carros em 400%". O que há de errado com 
+    essa afirmação?'
+  CorrectAnswer: Ela contraria um importante axioma da probabilidade
+  AnswerChoices: Ela contraria um importante axioma da probabilidade; A afirmação é dúbia; Os cálculos parecem
+    estar errados; Existe o viés da auto seleção nessa pesquisa; Ela Confunde correlação e causação
+  AnswerTests: omnitest(correctVal='Ela contraria um importante axioma da probabilidade')
+  Hint: Pense os valores máximos e mínimos da probabilidade de algo.
+
+# Questão 05
+
+- Class: text
+  Output: Exatamente. A regra mais básica da probabilidade é que qualquer evento aleatório tem uma chance entre 0
+    e 1 para ocorrer, ou seja, 0 >= P(A) >= 1 . Portanto, não se pode diminui a chance de algo em mais de 100%.
+
+# Questão 06
+
+- Class: mult_question
+  Output: 'Questão 04 - O que há de errado com a seguinte afirmação: nos últimos anos, o número de telefones 
+    celulares e o número de piratas aumentaram, portanto, há uma correlação ou associação entre 
+    essas duas variáveis. Portanto, telefones celulares causam piratas.'
+  CorrectAnswer: Ela Confunde correlação e causação
+  AnswerChoices: Ela contraria um importante axioma da probabilidade; A afirmação é dúbia; Os cálculos parecem
+    estar errados; Existe o viés da auto seleção nessa pesquisa; Ela Confunde correlação e causação
+  AnswerTests: omnitest(correctVal='Ela Confunde correlação e causação')
+  Hint: Lembre-se do mantra mais falado pelos metodólogos quantitativos
+
+# Questão 07
+
+- Class: text
+  Output: Exatamente. O mantra mais falado pelos estatísticos é "correlação não é causação!". O fato de dois 
+    eventos estarem sincronizados não significa que um está causando a outro. Na Europa, durante a Idade Média, 
+    a época de chegada das cegonhas (entre março e abril) coincidinha com muitos nascimentos. Isso ocorria 
+    porque havia muitas concepções durante o verão (junho e julho). Mas você anda acredita que foram as 
+    cegonhas que trouxeram os bebês?
+
+# Questão 08
+
+- Class: mult_question
+  Output: "Questão 05a - Identifique o tipo de amostragem (aleatória, sistemática, conveniência, estratificada, 
+    conglomerado) usada quando uma amostra de 1500 respostas de uma pesquisa nacional é obtida conforme descrito. 
+    \n\n\n
+    a. Uma lista completa de todos os 241.472.385 adultos nos Estados Unidos é compilada e cada 150.000o. 
+    nome é selecionado até que o tamanho da amostra de 1500 seja atingido."
+  CorrectAnswer: sistemática
+  AnswerChoices: aleatória; sistemática; conveniência; estratificada; conglomerado
+  AnswerTests: omnitest(correctVal='sistemática')
+  Hint: Veja os tipos de amostragem no capítulo 1
+
+# Questão 09
+
+- Class: mult_question
+  Output: "Questão 05b - Identifique o tipo de amostragem (aleatória, sistemática, conveniência, estratificada, 
+    conglomerado) usada quando uma amostra de 1500 respostas de uma pesquisa nacional é obtida conforme descrito. \n\n\n
+    b. Uma lista completa de todos os 241.472.385 adultos nos Estados Unidos é compilada e 1500 
+    adultos são selecionados aleatoriamente a partir dessa lista."
+  CorrectAnswer: aleatória
+  AnswerChoices: aleatória; sistemática; conveniência; estratificada; conglomerado
+  AnswerTests: omnitest(correctVal='aleatória')
+  Hint: Veja os tipos de amostragem no capítulo 1
+
+# Questão 10
+
+- Class: mult_question
+  Output: "Questão 05c - Identifique o tipo de amostragem (aleatória, sistemática, conveniência, estratificada, 
+    conglomerado) usada quando uma amostra de 1500 respostas da pesquisa é obtida conforme descrito.  
+    \n\n\n
+    c. Os Estados Unidos são divididos em regiões com 100 adultos em cada região. Então 15 dessas 
+    regiões são selecionadas aleatoriamente, e todas as 100 pessoas em cada uma dessas regiões 
+    são pesquisadas."
+  CorrectAnswer: conglomerado
+  AnswerChoices: aleatória; sistemática; conveniência; estratificada; conglomerado
+  AnswerTests: omnitest(correctVal='conglomerado')
+  Hint: Veja os tipos de amostragem no capítulo 1
+
+# Questão 11
+
+- Class: mult_question
+  Output: "Questão 05d - Identifique o tipo de amostragem (aleatória, sistemática, conveniência, estratificada, 
+    conglomerado) usada quando uma amostra de 1500 respostas da pesquisa é obtida conforme descrito.  
+    \n\n\n
+    d. Os Estados Unidos são divididos em 150 regiões com aproximadamente o mesmo número de adultos 
+    em cada região, em seguida, 10 pessoas são selecionadas aleatoriamente de cada uma das 150 regiões."
+  CorrectAnswer: estratificada
+  AnswerChoices: aleatória; sistemática; conveniência; estratificada; conglomerado
+  AnswerTests: omnitest(correctVal='estratificada')
+  Hint: Veja os tipos de amostragem no capítulo 1
+
+
+# Questão 12
+
+- Class: mult_question
+  Output: "Questão 06 - Você acredita? Em uma pesquisa da Harris Interactive, 2303 adultos foram questionados 
+    se acreditam em cinco coisas diferentes, e a tabela a seguir resume os resultados. Esta 
+    tabela descreve uma distribuição de frequência relativa? 
+    \n\n\n
+     --------------------------------  \n\n
+    | Acredita no demônio     | 60% |  \n\n
+    | Acredita no inferno     | 61% |  \n\n 
+    | Acredita em OVNIs       | 32% |  \n\n
+    | Acredita em astrologia  | 26% |  \n\n
+    | Acredita em reencarnação| 20% |  \n\n
+    ---------------------------------"
+  CorrectAnswer: Não
+  AnswerChoices: Sim;Não
+  AnswerTests: omnitest(correctVal='Não')
+  Hint: Veja a descrição de uma tabela de distribuição de frequência na seção 2.2.
+
+# Questão 13
+
+- Class: text
+  Output: Exatamente. A tabela acima mostra em cada linha variáveis diferentes. Por exemplo, a pessoa pode acreditar
+    em astrologia, mas não em OVNIs; ou então em OVNIs, mas não em astrologia, ou então em ambos ou ainda em nenhum
+    dos casos. A prova de que a tabela se refere a variáveis diferentes  é que a soma dos valores dá mais de 100%.
+
+
+# Questão 14
+
+- Class: text
+  Output: "Questão 07 - Iremos calcular agora a amplitude, variância e desvio-padrão do número de anos que 
+    os presidentes americanos (de Washington a Reagan) viveram depois dos mandatos, conforme constante no 
+    Conjunto de Dados 12, do Apêndice B do livro de Triola. Caso você quiser saber os valores, eles são 
+    os sequintes:
+    \n\n\n
+    Número de anos de vida após o mandato: 10, 29, 26, 28, 15, 23, 17, 25, 0, 4, 1, 16, 12, 4, 17, 16, 0, 
+    24, 12, 4, 18, 21, 11, 2, 9, 36, 12, 28, 16, 3, 9, 25 e 23.
+    \n\n\n
+    Carter, Clinton, Obama, e os Bush (pai e filho) estão fora da lista. Eles estavam vivos quando esses dados
+    foram coletados."
+
+
+# Questão 15
+
+- Class: text_question
+  Output: 'Questão 07a - Calcule a amplitude dos dados. Coloque no seguinte formato: "0 a 10" (essa não é a resposta).
+    NÃO coloque as aspas na sua resposta, mas não se esqueça do " a " entre os valores.'
+  CorrectAnswer: "0 a 36"
+  AnswerTests: omnitest(correctVal ="0 a 36")
+  Hint: Veja a fórmula na seção 3-3.
+
+# Questão 16
+
+- Class: cmd_question
+  Output: Questão 07b - Calcule a variância populacional dos dados. Arredonde o valor para a PRIMEIRA casa decimal, 
+    arredondando para baixo.
+  CorrectAnswer: 91.6
+  AnswerTests: omnitest(correctVal = 91.6)
+  Hint: Veja a fórmula na seção 3-3.
+
+
+# Questão 17
+
+- Class: cmd_question
+  Output: Questão 07c - Calcule o desvio-padrão populacional dos dados. Arredonde o valor para a PRIMEIRA casa decimal, 
+    arredondando para baixo.
+  CorrectAnswer: 9.5
+  AnswerTests: omnitest(correctVal = 9.5)
+  Hint: Veja a fórmula na seção 3-3.
+
+
+# Questão 18
+
+- Class: cmd_question
+  Output: "Questão 08a - Vamos comparar os desvios padrão dos tempos de espera (em minutos) dos clientes 
+  no Jefferson Valley Bank (onde todos os clientes entram em uma única linha de espera) e o Bank 
+  of Providence (onde os clientes esperam em linhas individuais em três janelas diferentes). Em primeiro lugar,
+  calcule o desvio-padrão de espera dos clientes dos Jefferson Valley. Os valores estão abaixo. 
+  Arredonde o valor para a PRIMEIRA casa decimal, arredondando para baixo.
+  \n\n\n
+  Jefferson Valley (fila única): 6.5, 6.6, 6.7, 6.8, 7.1, 7.3, 7.4, 7.7, 7.7, 7.7"
+
+  CorrectAnswer: 0.4
+  AnswerTests: omnitest(correctVal = 0.4)
+  Hint: Veja a fórmula na seção 3-3.
+
+
+
+# Questão 19
+
+- Class: cmd_question
+  Output: "Questão 08b - Agora calcule os valores de espera do Bank of Providence. Mais uma vez,
+  arredonde o valor para a PRIMEIRA casa decimal, arredondando para baixo.
+  \n\n\n
+  Providence (filas individuais): 4.2, 5.4, 5.8, 6.2, 6.7, 7.7, 7.7, 8.5, 9.3, 10.0"
+
+  CorrectAnswer: 1.8
+  AnswerTests: omnitest(correctVal = 1.8)
+  Hint: Veja a fórmula na seção de exercícios 3-3.
+
+
+# Questão 20
+
+- Class: text
+  Output: Podemos ver que ter uma fila única reduz muito a variação do tempo de espera. Não é por acaso que
+    em muitos setores a fila única é obrigatória por lei. 
+
+
+# Questão 21
+
+- Class: cmd_question
+  Output: "Questão 09 - Calcule o desvio-padrão aproximado da idade das atrizes ganhadoras do Oscar, 
+    com base na tabela de frequência abaixo. Arredonde o valor para a PRIMEIRA casa decimal, 
+    arredondando para baixo.
+    \n\n\n
+    --------------------- \n\n
+    | Idades      |   f     | \n\n
+    | 20 - 29     |   27    | \n\n
+    | 30 - 39     |   34    | \n\n
+    | 40 - 49     |   13    | \n\n
+    | 50 - 59     |   02    | \n\n
+    | 60 - 69     |   04    | \n\n
+    | 70 - 79     |   01    | \n\n
+    | 80 - 89     |   01    | \n\n
+    ---------------------    "
+  CorrectAnswer: 12.3
+  AnswerTests: omnitest(correctVal = 12.3)
+  Hint: Veja a fórmula na seção de exercícios 3-3.
+
+
+# Questão 22
+
+- Class: cmd_question
+  Output: "Questão 10 - Design de Aeronaves. Os engenheiros que projetam o armazenamento de compartimentos
+    suspensos em uma aeronave devem considerar as alturas de assento dos passageiros do sexo masculino. 
+    As alturas sentadas de homens adultos têm uma média de 914 mm e um desvio padrão de 36 mm (com 
+    base em dados de pesquisa antropométrica de Gordon, Churchill, et al.). Use a regra prática 
+    para identificar a altura de assento “usual” máxima."
+  CorrectAnswer: 986
+  AnswerTests: omnitest(correctVal = 986)
+  Hint: Veja a seção 3-4.
+
+
+# Questão 23
+
+
+- Class: cmd_question
+  Output: "Questão 10a - Loteria da Flórida. Deixe A denotar o evento de colocar uma aposta  
+    de um bilhete na loteria e ganhar. A chance do evento A ocorrer é de 1 em 10.000. Qual é 
+    o valor de P(A)?
+    \n\n\n
+    Coloque a resposta exata em fração ou decimal."
+  CorrectAnswer: 0.0001
+  #AnswerTests: omnitest(correctExpr='1/10000', correctVal = 0.0001)
+  AnswerTests: omnitest(correctVal = 0.0001)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 24
+
+
+- Class: cmd_question
+  Output: "Questão 10b -  Qual é o valor do complementar de P(A), ou seja P(Abarra)?
+    \n\n
+    Coloque a resposta exata em fração, fórmula ou decimal."
+  CorrectAnswer: 0.9999
+  #AnswerTests: any_of_exprs('9999/10000', '0.9999', '1 - 1/10000')
+  AnswerTests: omnitest(correctVal = 0.9999)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 25
+
+
+- Class: cmd_question
+  Output: "Questão 11 -  Genética mendeliana. Quando Mendel conduziu seus famosos experimentos genéticos com 
+    ervilhas, uma amostra de prole consistia de 428 ervilhas verdes e 152 ervilhas amarelas. 
+    Com base nesses resultados, calcule a probabilidade de obter uma ervilha da colheita que 
+    seja verde. 
+    \n\n
+    Responda em fração ou fórmula, com o VALOR EXATO."
+  CorrectAnswer: 428/580
+  AnswerTests: omnitest(correctVal = 428/580)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 26
+
+
+- Class: cmd_question
+  Output: "Questão 12 -  Qual a probabilidade de um casal que planeja ter três filhos ter 
+    pelo menos um filho de cada Sexo. Assuma que as chances de nascimento de cada sexo são iguais.
+    \n\n
+    Responda em fração ou fórmula, com o VALOR EXATO."
+  CorrectAnswer: 0.75
+  AnswerTests: omnitest(correctVal = 0.75)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 27
+
+
+- Class: cmd_question
+  Output: "Questão 13a -  Doença Genética Ligada ao X. Os homens têm cromossomos XY (ou YX) e as 
+    mulheres têm cromossomos XX. Doenças genéticas recessivas ligadas ao X (como retinosquise 
+    juvenil) ocorrem quando há um cromossomo X defeituoso que ocorre sem um cromossomo X 
+    pareado que é bom. A seguir, representaremos um cromossomo 'X' defeituoso com 'x' minúsculo, então 
+    uma criança com o par de cromossomos xY ou Yx terá a doença e uma criança com XX, XY, 
+    YX,xX ou Xx não terá a doença. Cada pai contribui com um dos cromossomos para a criança. 
+    Se uma mãe tem um cromossomo x defeituoso e um cromossomo bom X e o pai tem bons cromossomos 
+    XY, qual é a probabilidade de uma filha herdar a doença?
+    \n\n
+    Responda em decimal, arredonde o valor para a SEGUNDA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.00
+  AnswerTests: omnitest(correctVal = 0.00)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 28
+
+
+- Class: cmd_question
+  Output: "Questão 13b -  Ainda com relação ao caso anterior, qual a chance de um filho menino herdar
+    a doença?
+    \n\n
+    Responda em decimal, arredonde o valor para a SEGUNDA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.50
+  AnswerTests: omnitest(correctVal = 0.50)
+  Hint: Veja a seção 4-2.
+
+
+# Questão 29
+
+
+- Class: cmd_question
+  Output: "Questão 14 -  Pelo menos uma calculadora de trabalho. Uma estudante de métodos quantitativos 
+    planeja usar uma calculadora TI84 Plus em seu exame final. A partir de experiências anteriores,
+    ela estima que há 0,92 de probabilidade de a calculadora funcionar em qualquer dia. Como o exame 
+    final é importante, ela planeja usar a redundância trazendo duas calculadoras TI84 Plus. 
+    Dada essa tática, qual é a probabilidade de ela conseguir concluir seu exame com pelo menos 
+    uma calculadora de trabalho? 
+    \n\n
+    Responda em decimal ou em fórmula, com o valor exato."
+  CorrectAnswer: 0.0064
+  AnswerTests: omnitest(correctVal = 0.0064)
+  Hint: Veja a seção 4-5.
+
+
+
+# Questão 30
+
+- Class: text
+  Output: Essa estudante é realmente espertinha! Eu não gostaria de ter 8% de chance de reprovar na 
+    prova final só porque minha calculadora pifou! Agora se as chances são 0,64%, eu ficaria bem mais
+    tranquilo!
+
+
+# Questão 31
+
+
+- Class: cmd_question
+  Output: "Questão 15 -  Probabilidade de uma menina. Assumindo que meninos e meninas são igualmente 
+    prováveis, encontre a probabilidade de um casal ter um menino no quinto filho, dado que os quatro 
+    primeiros filhos eram meninas.
+    \n\n
+    Responda em decimal ou em fórmula, com o valor exato."
+  CorrectAnswer: 0.5
+  AnswerTests: omnitest(correctVal = 0.5)
+  Hint: Veja a seção 4-5.
+
+
+# Questão 32
+
+
+- Class: text
+  Output: Exatamanete. Os nascimentos dos filhos são eventos independentes. Dado que os quatro primeiros
+    filhos foram meninas, isso não influencia em nada o nascimento do quinto filho. As chances continuam 50% 
+    para casa sexo.
+
+
+# Questão 33
+
+
+- Class: cmd_question
+  Output: "Questão 16a -  Gêmeos Idênticos, A tabela abaixo reflete o princípio de que entre conjuntos 
+    de gêmeos, 1/3 são idênticos e 2/3 são fraternos. Além disso, gêmeos idênticos devem ser do 
+    tipo o mesmo sexo e os sexos são igualmente prováveis (aproximadamente), e os sexos de gêmeos 
+    fraternos são igualmente prováveis (H = menino, M = menina).
+    \n\n
+    ----------------------------------------- \n\n
+    | Probabilidades   | H/H | H/M | H/M | M/M| \n\n
+    | Gêmeos Idênticos | 05  | 00  | 00  | 05 | \n\n
+    | Gêmeos fraternos | 05  | 05  | 05  | 05 | \n\n
+    ----------------------------------------- \n\n
+    \n\n
+    Depois de ter um ultra-som, uma mulher grávida descobre que terá gêmeos. Qual é a probabilidade 
+    de ela ter gêmeos idênticos?
+    \n\n
+    Responda em FRAÇÃO, coloque a resposta exata."
+  CorrectAnswer: 1/3
+  AnswerTests: omnitest(correctVal = 1/3)
+  Hint: Veja a seção 4-5.
+
+
+# Questão 34
+
+
+- Class: cmd_question
+  Output: "Questão 16b -  Ainda na questão anterior. Depois de estudar o ultra-som mais de perto,
+    o médico diz à gestante que ela dará à luz a dois meninos. Qual é a probabilidade de ela ter gêmeos 
+    idênticos? Ou seja, encontrar a probabilidade de gêmeos idênticos, dado que os gêmeos consistem 
+    em dois meninos.
+    \n\n
+    Responda em FRAÇÃO, coloque a resposta exata."
+  CorrectAnswer: 1/2
+  AnswerTests: omnitest(correctVal = 1/2)
+  Hint: Veja a seção 4-5.
+
+
+
+# Questão 35
+
+
+- Class: cmd_question
+  Output: "Questão 17a -  Você quer sacar dinheiro usando um caixa eletrônico, mas está escuro e 
+    você não pode ver o seu cartão quando você o insere. O cartão deve ser inserido com a frente 
+    voltada para cima e a impressão configurada para que o início do seu nome seja inserido primeiro. 
+    Qual é a probabilidade de selecionar uma posição aleatória e inserir o cartão corretamente? 
+    \n\n
+    Responda em FRAÇÃO, coloque a resposta exata."
+  CorrectAnswer: 1/4
+  AnswerTests: omnitest(correctVal = 1/4)
+  Hint: Lembre-se de que o cartão tem duas faces e cada face tem dois lados curtos.
+
+
+# Questão 36
+
+- Class: cmd_question
+  Output: "Questão 17b -  Ainda com relação ao cartão no escuro que você não consegue ver. 
+    Vamos supor que você inseriu o cartão da primeira vez e não funcionou, então você selecionou
+    aleatoriamente outra posição. Qual a probabilidade de nessa segunda vez o cartão funcionar?
+    \n\n
+    Responda em FRAÇÃO, coloque a resposta exata."
+  CorrectAnswer: 1/3
+  AnswerTests: omnitest(correctVal = 1/3)
+  Hint: Esse sorteio é com ou sem reposição?
+
+
+
+# Questão 37
+
+- Class: cmd_question
+  Output: "Questão 17b -  Ainda com relação ao complicado cartão dos dois últimos exercícios.
+    Quantas seleções aleatórias são necessárias para você ter certeza que descobriu o lado correto
+    para inserir o cartão?
+    \n\n
+    Responda em FRAÇÃO, coloque a resposta exata."
+  CorrectAnswer: 3
+  AnswerTests: omnitest(correctVal = 3)
+  Hint: Pense em todas as possibilidades e quantas são fornecem informação nova.
+
+
+
+# Questão 38
+
+- Class: cmd_question
+  Output: "Questão 18a -  Assuma que um indivíduo selecionado aleatoriamente recebe um teste 
+    de densidade óssea. Esses testes tem resultados que são normalmente distribuídos, com uma 
+    média de 0 e um desvio padrão de 1. Encontre a probabilidade (em decimais) de um indivíduo 
+    ter um resultado maior que 0,82.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.2061
+  AnswerTests: any_of_exprs('0.2061', '0.2062')
+  Hint: Veja a seção 6-2.
+
+
+# Questão 39
+
+- Class: cmd_question
+  Output: "Questão 18b -  Igualmente, no teste de densidade óssea, encontre a probabilidade (em decimais) 
+    de um indivíduo ter um resultado maior que maior que -1,1.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.8644
+  AnswerTests: any_of_exprs('0.8644', '0.8643')
+  Hint: Veja a seção 6-2.
+
+
+# Questão 40
+
+- Class: cmd_question
+  Output: "Questão 18c - Igualmente, no teste de densidade óssea, encontre a probabilidade (em decimais) 
+    de um indivíduo ter um resultado maior que 1,54 ou menor que -1,54.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.1236
+  AnswerTests: any_of_exprs('0.1236', '0.1234', '0.1235')
+  Hint: Veja a seção 6-2.
+
+
+# Questão 41
+
+
+- Class: text
+  Output: Questão 19 - Agora iremos treinar olhar os gráficos da distribuição normal. 
+    olhe os gráficos que irão aparecer na tela ao lado e procure relaciona-los com as medidas da
+    distribuição normal (os escores z e as probabilidades acumuladas). Em todos os gráficos, os dados 
+    são da distribuição do QI na população, ou seja, tem média 100 e desvio-padrão de 15.
+
+
+# Questão 42
+
+- Class: figure
+  Output: Olhe o Gráfico da janela ao lado! Se o gráfico não apareceu, digite "Normal.Q1" (sem as aspas) no prompt
+    do R; ou então olhe o exercício 5 da página 264, do livro do Triola.
+  Figure: Graph01.R
+  FigureType: new
+
+
+# Questão 43
+
+- Class: cmd_question
+  Output: "Questão 19a -  Encontre a porcentagem da população que se encontra com o nível de QI indicado
+    pela área sombreada em verde no gráfico 01 (menor que 118).
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.8849
+  AnswerTests: any_of_exprs('0.8849', '0.8850', '0.8848')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 44
+
+- Class: figure
+  Output: Questão 19b -  Olhe o Gráfico da janela ao lado! Se o gráfico não apareceu, digite 
+    "Normal.Q1" (sem as aspas) no prompt do R; ou então olhe o exercício 6 da página 264, do livro do Triola.
+  Figure: Graph02.R
+  FigureType: new
+
+
+# Questão 45
+
+- Class: cmd_question
+  Output: "Questão 19b -  Encontre a porcentagem da população que se encontra com o nível de QI indicado
+    pela área sombreada em verde no gráfico 02.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.7257
+  AnswerTests: any_of_exprs('0.7257', '0.7256', '0.7258')
+  Hint: Veja a seção 6-3.
+
+
+
+# Questão 46
+
+- Class: figure
+  Output: Questão 19c -  Olhe o Gráfico da janela ao lado! Se o gráfico não apareceu, digite 
+    "Normal.Q1" (sem as aspas) no prompt do R; ou então olhe o exercício 8 da página 264, do livro do Triola.
+  Figure: Graph03.R
+  FigureType: new
+
+
+# Questão 47
+
+- Class: cmd_question
+  Output: "Questão 19c -  Encontre a porcentagem da população que se encontra com o nível de QI indicado
+    pela área sombreada em verde no gráfico 03.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.1570
+  AnswerTests: any_of_exprs('0.1570', '0.1569', '0.1571')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 48
+
+- Class: figure
+  Output: Questão 19d -  Olhe o Gráfico da janela ao lado! Se o gráfico não apareceu, digite 
+    "Normal.Q1" (sem as aspas) no prompt do R; ou então olhe o exercício 9 da página 264, do livro do Triola.
+  Figure: Graph04.R
+  FigureType: new
+
+
+# Questão 49
+
+- Class: cmd_question
+  Output: "Questão 19d -  Encontre o nível de QI que corresponde à área sombreada em verde no gráfico 03 
+    (que cobre 99,18% da população).
+    \n\n
+    Responda um valor inteiro arredondando para baixo."
+  CorrectAnswer: 136
+  AnswerTests: any_of_exprs('136', '135', '137')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 50
+
+- Class: figure
+  Output: Questão 19e -  Olhe o Gráfico da janela ao lado! Se o gráfico não apareceu, digite 
+    "Normal.Q1" (sem as aspas) no prompt do R; ou então olhe o exercício 10 da página 264, do livro do Triola.
+  Figure: Graph05.R
+  FigureType: new
+
+
+# Questão 51
+
+- Class: cmd_question
+  Output: "Questão 19e -  Encontre o nível de QI que corresponde à área sombreada em verde no gráfico 03 
+    (que cobre 15,87% da população).
+    \n\n
+    Responda um valor inteiro arredondando para baixo."
+  CorrectAnswer: 115
+  AnswerTests: any_of_exprs('115', '114', '113')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 52
+
+- Class: cmd_question
+  Output: "Questão 20a -  Pilotos da Marinha. A Marinha dos EUA exige que os pilotos de caça 
+    tenham alturas entre 62 polegadas e 78 polegadas. Sabendo que a altura das mulheres é normalmente
+    distribuida, com média 63,8 polegadas e desvio-padrão de 2,6 polegadas, encontre a porcentagem de mulheres que 
+    atendem ao requisito de altura.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.8793
+  AnswerTests: any_of_exprs('0.8793', '0.8792', '0.8794')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 54
+
+- Class: cmd_question
+  Output: "Questão 20b -  Pilotos da Marinha. A Marinha dos EUA exige que os pilotos de caça 
+    tenham alturas entre 62 polegadas e 78 polegadas. Sabendo que a altura dos homens é normalmente
+    distribuida, com média 69,5 polegadas e desvio-padrão de 2,4 polegadas, encontre a porcentagem 
+    de homens que atendem ao requisito de altura. 
+    \n\n
+    Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
+  CorrectAnswer: 0.9984
+  AnswerTests: any_of_exprs('0.9984', '0.9983', '0.9985')
+  Hint: Veja a seção 6-3.
+
+# Questão 57
+
+- Class: cmd_question
+  Output: "Questão 20c -  Pilotos da Marinha. A Marinha dos EUA exige que os pilotos de caça 
+    tenham alturas entre 62 polegadas e 78 polegadas. Sabendo que a altura das mulheres é normalmente
+    distribuida, com média 63,8 polegadas e desvio-padrão de 2,6 polegadas, diga: se a Marinha mudar os 
+    requisitos de altura para que todas as mulheres sejam elegíveis, exceto os 2% mais baixas e os 1% 
+    mais altas, qual seria a nova ALTURA MÍNIMA para as mulheres (em polegadas)? 
+    \n\n
+    Responda em decimal, arredonde o valor para a UMA casa decimal, arredondando para baixo."
+  CorrectAnswer: 58.4
+  AnswerTests: any_of_exprs('58.4', '58.3', '58.5')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 58
+
+- Class: cmd_question
+  Output: "Questão 20d -  Pilotos da Marinha. A Marinha dos EUA exige que os pilotos de caça 
+    tenham alturas entre 62 polegadas e 78 polegadas. Sabendo que a altura das mulheres é normalmente
+    distribuida, com média 63,8 polegadas e desvio-padrão de 2,6 polegadas, diga: se a Marinha mudar os 
+    requisitos de altura para que todas as mulheres sejam elegíveis, exceto os 2% mais baixas e os 1% 
+    mais altas, qual seria a nova ALTURA MÁXIMA para as mulheres (em polegadas)? 
+    \n\n
+    Responda em decimal, arredonde o valor para a UMA casa decimal, arredondando para baixo."
+  CorrectAnswer: 69.8
+  AnswerTests: any_of_exprs('69.8', '69.7', '69.9')
+  Hint: Veja a seção 6-3.
+
+
+# Questão 59
+  
+- Class: mult_question
+  Output: "Gostaria de informar ao seu instrutor sobre sua conclusão bem-sucedida de
+    esta lição via email? 
+    \n\n\n
+    Caso escolher Sim, o instrutor receberá um email comunicando que você terminou a lição.
+    O R abrirá duas janelas. Na primeira envie o email avisando o professor. Na segunda, janela
+    clique no botão 'Enviar'."
+  CorrectAnswer: NULL
+  AnswerChoices: Sim;Nao
+  AnswerTests: notify()
+  Hint: É importante deixar seu instrutor saber que você terminou a lição.
+  
+  
