@@ -1,10 +1,10 @@
-# Triola_Swril
+# Triola Swril
 
-Curso do [Swril](https://swirlstats.com/) de introdução à Estatítica, baseado no livro "Introdução à Estatística", de Mário Triola (12a edição em português). Criado para o Curso de Introdução à Estatística
+Curso do [Swril](https://swirlstats.com/) de introdução à Estatítica, baseado no livro "Introdução à Estatística", de Mário Triola (12a edição em português). Criado para o Curso de Metodologia Quantitativa em Ciência Política, do programa de Pós-Graduação em Ciência Política da Universidade Federal do Pará - UFPA, Belém do Pará, Brasil.
 
 ### Instalação com o github
 
-Execute os comandos abaixo no R para instalar o curso. Requer conexão com a internet.
+Para instalar o curso, execute os comandos abaixo no R. Requer conexão com a internet.
 
 ```r
 if(!"swirl" %in% rownames(installed.packages())) {install.packages("swirl")}

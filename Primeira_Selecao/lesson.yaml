@@ -189,7 +189,7 @@
   Output: Questão 07b - Calcule a variância populacional dos dados. Arredonde o valor para a PRIMEIRA casa decimal, 
     arredondando para baixo.
   CorrectAnswer: 91.6
-  AnswerTests: omnitest(correctVal = 91.6)
+  AnswerTests: omnitest(correctVal = 91.6, correctExpr= 91.6)
   Hint: Veja a fórmula na seção 3-3.
 
 
@@ -199,7 +199,7 @@
   Output: Questão 07c - Calcule o desvio-padrão populacional dos dados. Arredonde o valor para a PRIMEIRA casa decimal, 
     arredondando para baixo.
   CorrectAnswer: 9.5
-  AnswerTests: omnitest(correctVal = 9.5)
+  AnswerTests: omnitest(correctVal = 9.5, correctExpr= 9.5)
   Hint: Veja a fórmula na seção 3-3.
 
 
@@ -215,7 +215,7 @@
   Jefferson Valley (fila única): 6.5, 6.6, 6.7, 6.8, 7.1, 7.3, 7.4, 7.7, 7.7, 7.7"
 
   CorrectAnswer: 0.4
-  AnswerTests: omnitest(correctVal = 0.4)
+  AnswerTests: omnitest(correctVal = 0.4, correctExpr= "0.4", strict=TRUE)
   Hint: Veja a fórmula na seção 3-3.
 
 
@@ -229,7 +229,7 @@
   Providence (filas individuais): 4.2, 5.4, 5.8, 6.2, 6.7, 7.7, 7.7, 8.5, 9.3, 10.0"
 
   CorrectAnswer: 1.8
-  AnswerTests: omnitest(correctVal = 1.8)
+  AnswerTests: omnitest(correctVal = 1.8, correctExpr= 1.8, strict=TRUE)
   Hint: Veja a fórmula na seção de exercícios 3-3.
 
 
@@ -258,7 +258,7 @@
     | 80 - 89     |   01    | \n\n
     ---------------------    "
   CorrectAnswer: 12.3
-  AnswerTests: omnitest(correctVal = 12.3)
+  AnswerTests: omnitest(correctVal = 12.3, correctExpr= 12.3)
   Hint: Veja a fórmula na seção de exercícios 3-3.
 
 
@@ -271,7 +271,7 @@
     base em dados de pesquisa antropométrica de Gordon, Churchill, et al.). Use a regra prática 
     para identificar a altura de assento “usual” máxima."
   CorrectAnswer: 986
-  AnswerTests: omnitest(correctVal = 986)
+  AnswerTests: omnitest(correctVal = 986, correctExpr= 986)
   Hint: Veja a seção 3-4.
 
 
@@ -286,7 +286,7 @@
     Coloque a resposta exata em fração ou decimal."
   CorrectAnswer: 0.0001
   #AnswerTests: omnitest(correctExpr='1/10000', correctVal = 0.0001)
-  AnswerTests: omnitest(correctVal = 0.0001)
+  AnswerTests: any_of_exprs(0.0001, '1/10000')
   Hint: Veja a seção 4-2.
 
 
@@ -298,8 +298,7 @@
     \n\n
     Coloque a resposta exata em fração, fórmula ou decimal."
   CorrectAnswer: 0.9999
-  #AnswerTests: any_of_exprs('9999/10000', '0.9999', '1 - 1/10000')
-  AnswerTests: omnitest(correctVal = 0.9999)
+  AnswerTests: any_of_exprs('9999/10000', '0.9999', '1 - 1/10000')
   Hint: Veja a seção 4-2.
 
 
@@ -313,8 +312,8 @@
     seja verde. 
     \n\n
     Responda em fração ou fórmula, com o VALOR EXATO."
-  CorrectAnswer: 428/580
-  AnswerTests: omnitest(correctVal = 428/580)
+  CorrectAnswer: 428/(428+152)
+  AnswerTests: any_of_exprs(0.737931, '428/580', '428/(428+152)')
   Hint: Veja a seção 4-2.
 
 
@@ -327,7 +326,7 @@
     \n\n
     Responda em fração ou fórmula, com o VALOR EXATO."
   CorrectAnswer: 0.75
-  AnswerTests: omnitest(correctVal = 0.75)
+  AnswerTests: omnitest(correctVal = 0.75, correctExpr= 0.75)
   Hint: Veja a seção 4-2.
 
 
@@ -346,7 +345,7 @@
     \n\n
     Responda em decimal, arredonde o valor para a SEGUNDA casa decimal, arredondando para baixo."
   CorrectAnswer: 0.00
-  AnswerTests: omnitest(correctVal = 0.00)
+  AnswerTests: omnitest(correctVal = 0.00, correctExpr= 0)
   Hint: Veja a seção 4-2.
 
 
@@ -359,7 +358,7 @@
     \n\n
     Responda em decimal, arredonde o valor para a SEGUNDA casa decimal, arredondando para baixo."
   CorrectAnswer: 0.50
-  AnswerTests: omnitest(correctVal = 0.50)
+  AnswerTests: omnitest(correctVal = 0.50, correctExpr= 0.50)
   Hint: Veja a seção 4-2.
 
 
@@ -376,7 +375,7 @@
     \n\n
     Responda em decimal ou em fórmula, com o valor exato."
   CorrectAnswer: 0.0064
-  AnswerTests: omnitest(correctVal = 0.0064)
+  AnswerTests: omnitest(correctVal = 0.0064, correctExpr= 0.0064)
   Hint: Veja a seção 4-5.
 
 
@@ -399,7 +398,7 @@
     \n\n
     Responda em decimal ou em fórmula, com o valor exato."
   CorrectAnswer: 0.5
-  AnswerTests: omnitest(correctVal = 0.5)
+  AnswerTests: omnitest(correctVal = 0.5, correctExpr= 0.5)
   Hint: Veja a seção 4-5.
 
 
@@ -432,7 +431,7 @@
     \n\n
     Responda em FRAÇÃO, coloque a resposta exata."
   CorrectAnswer: 1/3
-  AnswerTests: omnitest(correctVal = 1/3)
+  AnswerTests: omnitest(correctVal = 1/3, correctExpr= 1/3)
   Hint: Veja a seção 4-5.
 
 
@@ -447,7 +446,7 @@
     \n\n
     Responda em FRAÇÃO, coloque a resposta exata."
   CorrectAnswer: 1/2
-  AnswerTests: omnitest(correctVal = 1/2)
+  AnswerTests: omnitest(correctVal = 1/2, correctExpr= 1/2)
   Hint: Veja a seção 4-5.
 
 
@@ -463,7 +462,7 @@
     \n\n
     Responda em FRAÇÃO, coloque a resposta exata."
   CorrectAnswer: 1/4
-  AnswerTests: omnitest(correctVal = 1/4)
+  AnswerTests: omnitest(correctVal = 1/4, correctExpr= 1/4)
   Hint: Lembre-se de que o cartão tem duas faces e cada face tem dois lados curtos.
 
 
@@ -476,7 +475,7 @@
     \n\n
     Responda em FRAÇÃO, coloque a resposta exata."
   CorrectAnswer: 1/3
-  AnswerTests: omnitest(correctVal = 1/3)
+  AnswerTests: omnitest(correctVal = 1/3, correctExpr= 1/3)
   Hint: Esse sorteio é com ou sem reposição?
 
 
@@ -490,7 +489,7 @@
     \n\n
     Responda em FRAÇÃO, coloque a resposta exata."
   CorrectAnswer: 3
-  AnswerTests: omnitest(correctVal = 3)
+  AnswerTests: omnitest(correctVal = 3, correctExpr= 3)
   Hint: Pense em todas as possibilidades e quantas são fornecem informação nova.
 
 
