@@ -375,7 +375,8 @@
     \n\n
     Responda em decimal ou em fórmula, com o valor exato."
   CorrectAnswer: 0.0064
-  AnswerTests: omnitest(correctVal = 0.0064, correctExpr= 0.0064)
+  #AnswerTests: omnitest(correctVal = 0.0064, correctExpr= 0.0064)
+  AnswerTests: any_of_exprs('0.0064', '0.08^2', '(1-0.92)^2', '(1-0.92)*(1-0.92)')
   Hint: Veja a seção 4-5.
 
 
@@ -657,8 +658,8 @@
     atendem ao requisito de altura.
     \n\n
     Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
-  CorrectAnswer: 0.8793
-  AnswerTests: any_of_exprs('0.8793', '0.8792', '0.8794')
+  CorrectAnswer: 0.7549
+  AnswerTests: any_of_exprs('0.7549', '0.7548', '0.7550')
   Hint: Veja a seção 6-3.
 
 
@@ -671,8 +672,8 @@
     de homens que atendem ao requisito de altura. 
     \n\n
     Responda em decimal, arredonde o valor para a QUARTA casa decimal, arredondando para baixo."
-  CorrectAnswer: 0.9984
-  AnswerTests: any_of_exprs('0.9984', '0.9983', '0.9985')
+  CorrectAnswer: 0.999
+  AnswerTests: any_of_exprs('0.999', '1')
   Hint: Veja a seção 6-3.
 
 # Questão 57
