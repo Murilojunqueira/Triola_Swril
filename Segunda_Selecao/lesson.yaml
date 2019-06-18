@@ -1,0 +1,249 @@
+- Class: meta
+  Course: Triola_Swril
+  Lesson: Segunda Selecao
+  Author: Murilo de Oliveira Junqueira
+  Type: Standard
+  Organization: Universidade Federal do Pará
+  Version: 2.4.4
+  
+  
+# Questão 01
+
+- Class: text
+  Output: Aqui iremos fazer uma seleção de exercícios retirados do livro 'Introdução à Estatística', 
+    de Mário Triola (12a. edição). Por favor resposta os exercícios conforme solicitado e depois envie as 
+    lições ao seu instrutor. A última questão dessa lição te mostrará como fazer isso.
+
+# Questão 02
+
+- Class: text
+  Output: "Para tornar as coisas um pouco mais interessantes, eu retirei a função skip() do swirl,
+    assim o programa não vai te dar a resposta automaticamente! ;-).
+    \n\n
+    Não se desespere, tenho certeza que você consegue chegar à resposta correta sozinho!"
+
+
+
+# Questão 03
+
+- Class: cmd_question
+  Output: "Questão 01 - Teste de Densidade Óssea. Assuma que as pontuações em um teste de densidade mineral óssea 
+    são normalmente distribuídas com uma média de 0 e um desvio padrão de 1.
+    \n\n
+    Para um sujeito selecionado aleatoriamente, encontre a probabilidade de uma pontuação entre 1,37 e 2,42.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUATRO casas decimais (ex: 0.9999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.0775', '0.0774', '0.0776')
+  Hint: Lembre-se o que estudamos sobre os escores z e sua relação com as tabelas de distribuição normal, P(z).
+    Fazer um desenho do que queremos encontrar no gráfico normal ajuda muito.
+
+
+
+# Questão 04
+
+- Class: cmd_question
+  Output: "Questão 02 - Suponha que as contagens de hemácias no sangue das mulheres sejam distribuídas 
+    normalmente com uma média de 4,577 e um desvio padrão de 0,382. 
+    \n\n
+    Encontre a probabilidade de uma mulher selecionada aleatoriamente ter uma contagem de glóbulos 
+    vermelhos acima do intervalo normal de 4,2 a 5,4.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUATRO casas decimais (ex: 0.9999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.0158', '0.0157', '0.0159')
+  Hint: Lembre-se o que estudamos sobre os escores z e sua relação com as tabelas de distribuição normal, P(z).
+    Não se esqueça de transformar os valores que não estão no escore z! 
+    Fazer um desenho do que queremos encontrar no gráfico normal ajuda muito.
+
+
+
+# Questão 05
+
+- Class: cmd_question
+  Output: "Questão 03 - Teste de densidade óssea. Um teste de densidade mineral óssea é usado para identificar 
+    uma doença óssea. O resultado de um teste de densidade óssea é comumente medido como um escore 
+    z, e a população de escores z é normalmente distribuída com uma média de 0 e um desvio padrão de 1.
+    \n\n
+    Se a pontuação média do teste de densidade óssea for encontrada para 16 indivíduos selecionados 
+    aleatoriamente, encontre a probabilidade de que a média seja maior que 0,27.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUATRO casas decimais (ex: 0.9999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.1401', '0.1400', '0.1402')
+  Hint: Dado o Teorema do Limite Central, como calculamos a chance de uma amostra se diferir do dado populacional?
+    Faça a devida adaptação do teste para um indivíduo.
+
+
+# Questão 06
+
+- Class: cmd_question
+  Output: "Questão 04 - Olho Mágico da Porta. As alturas dos olhos das mulheres em pé são normalmente 
+    distribuídas com uma média de 1516 mm e um desvio padrão de 63 mm (com base em dados de pesquisa 
+    antropométrica de Gordon, Churchill, et al.).
+    \n\n
+    Ao selecionar a altura do olho mágico da porta, o arquiteto quer que sua altura seja adequada para 
+    os 99% mais altos das mulheres em pé. Qual altura dos olhos das mulheres que separa os 99% mais 
+    altos da altura dos olhos em pé do 1% mais baixo?
+    \n\n
+    Responda em milímetros(mm), arredonde o valor para a UMA casa decimal (ex: 9999,9), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('1369.2', '1369.1', '1369.0')
+  Hint: Lembre-se o que estudamos sobre os escores z e sua relação com as tabelas de distribuição normal, P(z).
+    Não se esqueça de transformar os valores que não estão no escore z! 
+    Fazer um desenho do que queremos encontrar no gráfico normal ajuda muito.
+
+
+# Questão 07
+
+- Class: cmd_question
+  Output: "Questão 05 -  (exercício de revisão dos capítulos anteriores). A seguir estão os atuais salários 
+    anuais (em milhares de dólares) para os jogadores iniciantes no time oficial de basquete do Miami Heat
+    \n\n
+    Salários: 14500, 14500, 14000, 5000, 3500. 
+    \n\n
+    Encontre a mediana e expresse o resultado em dólares em vez de milhares de dólares.
+    \n\n
+    Responda em dolares, no valor exato."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('14000000')
+  Hint: Veja como se calcula a mediana.
+
+
+
+# Questão 08
+
+- Class: cmd_question
+  Output: "Questão 06a -  Pesos de Nascimento. O peso ao nascer nos Estados Unidos têm uma distribuição 
+    que é aproximadamente normal, com uma média de 3369 g um desvio padrão de 567 g (com base nos dados 
+    de 'Comparação de distribuições de peso ao nascer entre bebês chineses e caucasianos', por Wen, 
+    Kramer, Usher , American Journal of Epidemiology, Vol. 172, No. 10).
+    \n\n
+    Uma definição de um bebê prematuro é que o peso ao nascer está nos 10% mais baixos. Encontre o 
+    peso ao nascer que é o corte entre os 10% de baixo e os 90% de cima.
+    \n\n
+    Responda em valores de gramas(g) inteiras, no valor exato."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('2643', '2644', '2642')
+  Hint: Lembre-se de como olhamos a distribuição de valores normais não-padrão. Qual a primeira coisa que devemos
+    Fazer quando encontramos um valor normal não padrão?
+
+
+# Questão 09
+
+- Class: cmd_question
+  Output: "Questão 06b -  Pesos De Nascimento. Pesos ao nascer nos Estados Unidos têm uma distribuição que é 
+    aproximadamente normal, com uma média de 3369 ge um desvio padrão de 567 g (com base nos dados de 
+    'Comparação de distribuições de peso ao nascer entre bebês chineses e caucasianos', por Wen, 
+    Kramer, Usher , American Journal of Epidemiology, Vol. 172, No. 10).
+    \n\n
+    Uma definição de 'muito baixo peso ao nascer' é aquela que é inferior a 1500 g. Se um bebê for 
+    selecionado aleatoriamente, encontre a probabilidade de um 'peso muito baixo ao nascer'.
+    \n\n
+    Responda em decimal, arredonde o valor para a QUATRO casas decimais (ex: 0.9999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.0005', '0.0004', '0.0006')
+  Hint: Lembre-se de como olhamos a distribuição de valores normais não-padrão. Qual a primeira coisa que devemos
+    Fazer quando encontramos um valor normal não padrão?
+
+
+
+# Questão 10
+
+- Class: cmd_question
+  Output: "Questão 07 -  Destros e Canhotos. Segundo dados da American Medical Association, 10% das 
+    pessoas são canhotas.
+    \n\n
+    Se grupos de 50 pessoas são selecionados aleatoriamente, qual é o número médio esperado de pessoas canhotas nesses grupos?
+    \n\n
+    Responda em valores inteiros, no valor exato."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('5')
+  Hint: Lembre de como as médias amostrais se comportam em relação às medidas populacionais.
+
+
+
+# Questão 11
+
+- Class: cmd_question
+  Output: "Questão 08 -  Encontre o tamanho da amostra necessário para estimar a porcentagem de estudantes 
+    universitários que possuem um carro. Suponha que queremos 95% de confiança de que a proporção da amostra 
+    esteja dentro de três pontos percentuais da porcentagem real da população.
+    \n\n
+    Responda em valores inteiros, arredondando para cima (arredondar para cima é o padrão em n de amostras)."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('1068', '1067', '1069')
+  Hint: Lembre-se de como calculamos o tamanho de amostra em proporções. Repare que não existe nenhuma estimativa 
+    prévia nesse exercício.
+
+
+# Questão 12
+
+- Class: cmd_question
+  Output: "Questão 09a -  Encontre o tamanho da amostra necessário para estimar a média de QI dos alunos 
+    que atualmente fazem um curso de ciência política. Suponha que desejemos 99% de confiança de que a média da 
+    amostra esteja dentro de dois pontos de QI da média real da população. Suponha também que sigma = 15.
+    \n\n
+    Responda em valores inteiros, arredondando para cima (arredondar para cima é o padrão em n de amostras)."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('373', '372', '374')
+  Hint: Veja como calculamos o tamanho da amostra em estimação de médias. Repare que existem dois jeitos de fazer isso.
+    Em qual dos casos este exercício se encaixa?
+
+
+# Questão 13
+
+- Class: cmd_question
+  Output: "Questão 09b -  Qual é a margem de erro de uma pesquisa que visa estimar a média de QI dos alunos 
+    que atualmente fazem um curso de ciência política em uma amostra aleatória de 61 indivíduos. Suponha que desejemos 99% 
+    de confiança e que também que não sabemos o desvio-padrão populacional, mas que o desvio-padrão amostral é 12.
+    \n\n
+    Responda em valores inteiros de pontos de QI, arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('4')
+  Hint: O que fazemos quando não sabemos o desvio-padrão populacional e apenas temos o desvio-padrão amostral?
+
+
+
+# Questão 14
+
+- Class: cmd_question
+  Output: "Questão 10a -  Em uma pesquisa Gallup de 557 adultos selecionados 
+    aleatoriamente, 284 disseram que eram mal pagos. Em uma estimativa de intervalo de confiança 
+    de 95% da porcentagem de todos os adultos que dizem que são mal pagos, qual é o LIMITE INFERIOR 
+    do intervalo de confiança?
+    \n\n
+    Responda em decimal, arredonde o valor para a TRÊS casas decimais (ex: 0.999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.468', '0.467', '0.469')
+  Hint: Veja como calculamos o intervalo de confiança no capítulo 7.
+
+
+# Questão 15
+
+- Class: cmd_question
+  Output: "Questão 10b -  Em uma pesquisa Gallup de 557 adultos selecionados 
+    aleatoriamente, 284 disseram que eram mal pagos. Em uma estimativa de intervalo de confiança 
+    de 95% da porcentagem de todos os adultos que dizem que são mal pagos, qual é o LIMITE SUPERIOR 
+    do intervalo de confiança?
+    \n\n
+    Responda em decimal, arredonde o valor para a TRÊS casas decimais (ex: 0.999), arredondando para baixo."
+  CorrectAnswer: "0"
+  AnswerTests: any_of_exprs('0.551', '0.550', '0.552')
+  Hint: Veja como calculamos o intervalo de confiança no capítulo 7.
+
+
+
+  # Questão Final
+
+- Class: mult_question
+  Output: "Parabéns, você terminou sua lição! 
+    \n\n\n\
+    Gostaria de informar ao seu instrutor sobre sua conclusão bem-sucedida desta lição?"
+  CorrectAnswer: NULL
+  AnswerChoices: Sim;Nao
+  AnswerTests: submit_log()
+  Hint: É importante deixar seu instrutor saber que você terminou a lição.
+  
+    
+  # Fim
